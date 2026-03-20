@@ -25,6 +25,6 @@ export async function syncUser() {
 
     return dbUser;
   } catch (error) {
-    console.log("Error in syncUser server action", error);
+    console.error("Error in syncUser server action", error);
   }
 }
