@@ -7,9 +7,8 @@ import { AppointmentStatus } from "@/generated/prisma/enums";
 function transformAppointment(appointment: any) {
   return {
     ...appointment,
-    patientName: `${appointment.user.firstName || ""} ${
-      appointment.user.lastName || ""
-    }`.trim(),
+    patientName:
+      `${appointment.user.firstName || ""} ${appointment.user.lastName || ""}`.trim(),
     patientEmail: appointment.user.email,
     doctorName: appointment.doctor.name,
     doctorImageUrl: appointment.doctor.imageUrl || "",
@@ -33,7 +32,7 @@ export async function getAppointments() {
       orderBy: { createdAt: "desc" },
     });
 
-    return appointments;
+    return appointments.map(transformAppointment);
   } catch (error) {
     console.error("Error fetching appointments:", error);
     throw new Error("Failed to fetch appointments");

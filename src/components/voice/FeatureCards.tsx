@@ -5,7 +5,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { MicIcon, BrainIcon, ClockIcon, CalendarIcon } from "lucide-react";
+import { MicIcon, BrainIcon, ClockIcon } from "lucide-react";
 
 function FeatureCards() {
   return (
