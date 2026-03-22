@@ -26,7 +26,7 @@ export async function POST(request: Request) {
 
     // send the email
     const { data, error } = await resend.emails.send({
-      from: "DentAI Assist <no-reply@resend.dev>",
+      from: "DentAI Assist <onboarding@resend.dev>",
       to: [userEmail],
       subject: "Appointment Confirmation - DentAI Assist",
       react: AppointmentConfirmationEmail({
