@@ -31,7 +31,6 @@ export const formatPhoneNumber = (value: string) => {
   )}-${phoneNumber.slice(6, 10)}`;
 };
 
-//  ai generated 🎉
 export const getNext5Days = () => {
   const dates = [];
   const tomorrow = new Date();
@@ -64,18 +63,18 @@ export const getAvailableTimeSlots = () => {
 };
 
 export const APPOINTMENT_TYPES = [
-  { id: "checkup", name: "Regular Checkup", duration: "60 min", price: "$120" },
-  { id: "cleaning", name: "Teeth Cleaning", duration: "45 min", price: "$90" },
+  { id: "checkup", name: "Regular Checkup", duration: "60 min", price: "$100" },
+  { id: "cleaning", name: "Teeth Cleaning", duration: "45 min", price: "$80" },
   {
     id: "consultation",
     name: "Consultation",
     duration: "30 min",
-    price: "$75",
+    price: "$60",
   },
   {
     id: "emergency",
     name: "Emergency Visit",
     duration: "30 min",
-    price: "$150",
+    price: "$120",
   },
 ];
