@@ -104,43 +104,6 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
 
-## 📁 Project Structure
-
-```
-dentai-assist/
-├── prisma/
-│   └── schema.prisma          # Database schema
-├── src/
-│   ├── app/                   # Next.js App Router
-│   │   ├── admin/             # Admin dashboard
-│   │   ├── appointments/      # Booking system
-│   │   ├── dashboard/         # User dashboard
-│   │   ├── voice/             # AI voice agent
-│   │   ├── pro/               # Pricing & upgrade
-│   │   └── api/               # API routes
-│   ├── components/
-│   │   ├── admin/             # Admin components
-│   │   ├── appointments/      # Booking components
-│   │   ├── dashboard/         # Dashboard components
-│   │   ├── emails/            # Email templates
-│   │   ├── landing/           # Landing page sections
-│   │   ├── voice/             # Voice agent components
-│   │   └── ui/                # Shadcn UI components
-│   ├── hooks/                 # TanStack Query hooks
-│   ├── lib/
-│   │   ├── actions/           # Server actions
-│   │   ├── prisma.ts          # Prisma client
-│   │   ├── vapi.ts            # VAPI client
-│   │   ├── resend.ts          # Resend client
-│   │   └── utils.ts           # Utility functions
-│   └── generated/             # Prisma generated client
-├── public/                    # Static assets
-├── prisma.config.ts           # Prisma v7 config
-└── next.config.ts             # Next.js config
-```
-
----
-
 ## 🎯 Pages
 
 | Route | Description |
